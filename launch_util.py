@@ -35,7 +35,7 @@ def is_installed(package):
 def run(command, desc=None, errdesc=None, custom_env=None, live: bool = default_command_live) -> str:
     if desc is not None:
         print(desc)
-    print(command)
+    
     run_kwargs = {
         "args": command,
         "shell": True,
