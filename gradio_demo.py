@@ -378,7 +378,7 @@ class BGSource(Enum):
 
 
 block = gr.Blocks().queue()
-with block:
+with block(theme="dark"):
     with gr.Row():
         gr.Markdown("## IC-Light (Relighting with Foreground Condition)")
     with gr.Row():
