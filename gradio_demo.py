@@ -430,4 +430,4 @@ with block:
     example_quick_subjects.click(lambda x: x[0], inputs=example_quick_subjects, outputs=prompt, show_progress=False, queue=False)
 
 
-block.launch(share=True,theme="dark")
+block.launch(share=True)
