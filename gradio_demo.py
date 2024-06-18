@@ -378,7 +378,7 @@ class BGSource(Enum):
 
 
 block = gr.Blocks().queue()
-with block(theme="dark"):
+with block:
     with gr.Row():
         gr.Markdown("## IC-Light (Relighting with Foreground Condition)")
     with gr.Row():
@@ -430,4 +430,4 @@ with block(theme="dark"):
     example_quick_subjects.click(lambda x: x[0], inputs=example_quick_subjects, outputs=prompt, show_progress=False, queue=False)
 
 
-block.launch(share=True)
+block.launch(share=True,theme="dark")
