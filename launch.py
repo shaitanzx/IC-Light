@@ -23,3 +23,4 @@ requirements_file = os.environ.get('REQS_FILE', "requirements.txt")
 
 run_pip(f"install -r \"{requirements_file}\"", "requirements")
 
+from gradio_demo import *
